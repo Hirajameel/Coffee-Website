@@ -1,0 +1,240 @@
+body{
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    
+}
+h2,p,h3{
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+}
+header{
+    background-color:#cc9900;
+    color:#fff;
+    padding: 10px 100px;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    z-index: 9;
+    position: relative;
+}
+header .logo h1{
+    margin: 0;
+}
+
+header nav ul{
+    list-style:none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    font-size:30px;
+    font-family: 'Segoe UI';
+    
+}
+header nav ul li{
+    margin-left: 20px;   
+    
+}
+header nav ul li a{
+    color: #fff;
+    text-decoration: none;
+}
+.Hero{
+   
+    background-size: cover;
+    color: #fff;
+    text-align: center;
+     padding: 100px 20px; 
+    position: relative;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.Hero h2{
+    font-size: 3rem;
+    border: 2px solid black; 
+    display: inline-block;
+    background-color: rgb(173, 21, 21); 
+    position: relative;
+    margin-bottom: 16px;
+}
+.Hero p{
+    font-size: 2.5rem;
+    position: relative;
+    margin-bottom: 16px;
+    display: block;;
+    background-color:#cc9900;
+    border: #fff;
+
+}
+.Hero button{
+    background-color:rgb(173, 21, 21);
+    color: #fff;
+    font-size: 1.2rem;
+    cursor: pointer;
+    margin-top: 20px;
+    border: black;
+    padding: 10px 20px;
+    position: relative;
+} 
+.menu{
+    text-align: center;
+    padding: 50px 20px;
+}
+.menu h2{
+    font-size: 3rem;
+    margin-bottom: 30px;
+}
+.menu .menu-items{
+    display: inline-block;
+    width: 30%;
+    margin: 0 1%;
+    text-align: center;
+}
+.menu-parent {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 27px;
+}
+.menu .menu-items img{
+    width: 100%;
+    border-radius: 10px;
+}
+.menu .menu-items h3{
+    margin: 15px 0 10px;
+}
+.menu-items img {
+    height: 351px;
+    object-fit: cover;
+}
+.menu .menu-items p{
+    margin: 0 0 10px;
+}
+.menu .menu-items span{
+    font-size: 1.2 rem;
+    color:rgb(173, 21, 21); 
+}
+footer{
+    background-color: rgb(173, 21, 21);
+    color: #fff;
+    text-align: center;
+    margin-top: 50px;
+    padding: 20px 0;
+
+}
+#about{
+    /* background-color: #f7f7f7; */
+    /* font-size: 24px; */
+    /* padding: 40px; */
+    /* margin-bottom: 20px; */
+    /* box-shadow: 0 2px 4px rgba(0,0,0,0.5); */
+    text-align: center;
+}
+#about h2{
+    font-size:40px;
+    margin-top: 0;
+    color: #333 solid;   
+}
+#about p{
+    font-size: 24px;
+    color: black;
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+#contact{
+    background-color:#f7f7f7;
+    padding: 40px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    text-align: center;
+}
+#contact h2{
+    font-size: 40px;
+    margin-top: 0;
+    color: #333;
+}
+#contact p{
+    line-height: 1.5px;
+    margin-bottom: 20px;
+    font-size: 18px;
+    color: black;
+
+}
+.about-content {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 19px;
+}
+
+.about-content img {
+    width: 100%;
+}
+
+
+.custom-temp-btn.hvr-fade.hvr-hollow {
+    background: rgb(173, 21, 21);
+    border:none;
+    color: #fff;
+    padding: 12px 12px;
+    font-size: 18px;
+    text-decoration: none;
+}
+video {
+    width: 100vw;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100vh;
+    object-fit: cover;
+}
+.logo img {
+    width: 96px;
+}
+
+@media only screen and (max-width: 767px) {
+    header {
+        flex-direction: column;
+        padding: 4px 13px;
+    }
+    
+    header nav ul {
+        font-size: 17px;
+    }
+    
+    .Hero h2 {
+        font-size: 2rem;
+    }
+    
+    .Hero p {
+        font-size: 1.5rem;
+    }
+    
+    .Hero {
+        padding: 0;
+    }
+    
+    .menu-parent {
+        flex-direction: column;
+    }
+    
+    .menu .menu-items {
+        width: 100%;
+    }
+    
+    .about-content {
+        grid-template-columns: 100%;
+    }
+    .about-content.about2 {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    #about p {
+        font-size: 16px;
+    }
+    
+  }
